@@ -41,6 +41,11 @@ $('.btn').on('click', function () {
 });
 
 function animatePress(currentColor) {
-    $(this).classList.add('.pressed');
+    $('#' + currentColor).addClass('pressed');
+    setTimeout(function () {
+        $('#' + currentColor).removeClass('pressed')
+    });
 }
+
+// Got up to Step 7
 
